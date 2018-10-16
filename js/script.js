@@ -11,4 +11,18 @@ $(document).ready(function() {
         $(this).addClass('active') ;
     });
 
+    // un texte qui apparait lettre par lettre comme en dactylo
+
+    var text = "Mon site";
+
+    for (let i=0; i<text.length; i++){
+        console.log(text[i]);
+
+        setTimeout(function() {
+            $('#textAppears').append(text[i]);
+        }, 250 * i);
+    }
+    
+
+
 });
